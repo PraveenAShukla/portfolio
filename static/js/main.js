@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section');
     const navLinks = document.querySelectorAll('.nav-link');
     
-    // Smooth scrolling for navigation links
+    // Smooth scrolling for navigation links with adjusted offset for fixed header
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -13,8 +13,12 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
+                // Calculate offset accounting for fixed header
+                const headerHeight = document.querySelector('.fixed-header').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+                
                 window.scrollTo({
-                    top: targetElement.offsetTop - 100,
+                    top: targetPosition - headerHeight - 20, // Extra 20px for spacing
                     behavior: 'smooth'
                 });
                 
@@ -25,14 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Highlight active section on scroll
+    // Highlight active section on scroll with fixed header offset
     window.addEventListener('scroll', function() {
         let current = '';
+        const headerHeight = document.querySelector('.fixed-header').offsetHeight;
         
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 150;
+            const sectionTop = section.getBoundingClientRect().top + window.pageYOffset;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+            
+            // Account for fixed header when detecting active section
+            if (window.pageYOffset >= sectionTop - headerHeight - 50 && 
+                window.pageYOffset < sectionTop + sectionHeight - headerHeight) {
                 current = section.getAttribute('id');
             }
         });
@@ -49,4 +57,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (navLinks.length > 0) {
         navLinks[0].classList.add('active');
     }
+    
+    // Remove the "Made in Framer" text/element if it exists
+    const footerElements = document.querySelectorAll('footer, [class*="framer"], [class*="Framer"]');
+    footerElements.forEach(element => {
+        if (element.textContent.includes('Framer') || element.innerHTML.includes('Framer')) {
+            element.style.display = 'none';
+        }
+    });
 });
