@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <!-- Simple circular logo based on the screenshot -->
+  <circle cx="20" cy="20" r="18" fill="#9c27b0" opacity="0.9"/>
+  <circle cx="20" cy="20" r="12" fill="white" opacity="0.7"/>
+  <rect x="15" y="15" width="10" height="10" fill="#9c27b0" opacity="0.8"/>
+</svg>

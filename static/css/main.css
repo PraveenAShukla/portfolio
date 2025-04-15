@@ -1,0 +1,165 @@
+/* General Styles */
+:root {
+    --primary-color: #9c27b0; /* Purple accent color */
+    --text-color: #333;
+    --light-gray: #f8f9fa;
+    --medium-gray: #e9ecef;
+    --dark-gray: #6c757d;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 20px;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header and Navigation */
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link.active {
+    color: var(--primary-color);
+}
+
+/* Profile Section */
+.profile-img-container {
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 5px;
+    display: block;
+}
+
+.name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.specialties {
+    margin-bottom: 15px;
+}
+
+.specialties p {
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.contact-info p {
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+    color: var(--dark-gray);
+}
+
+/* Sections */
+.section {
+    margin-bottom: 60px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.section-content {
+    margin-bottom: 30px;
+}
+
+/* Affiliations */
+.affiliation {
+    margin-bottom: 25px;
+}
+
+.affiliation h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.timeframe {
+    font-size: 0.9rem;
+    color: var(--dark-gray);
+    margin-bottom: 5px;
+}
+
+.position {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+}
+
+.researcher-link {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.researcher-link:hover {
+    text-decoration: underline;
+}
+
+/* Education */
+.education {
+    margin-bottom: 25px;
+}
+
+.education h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: var(--primary-color);
+}
+
+.degree {
+    font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .col-md-3 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .profile-img {
+        margin: 0 auto;
+    }
+}
