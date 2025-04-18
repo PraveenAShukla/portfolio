@@ -16,6 +16,26 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
+<script>
+  // Disable right-click
+  document.addEventListener('contextmenu', function(event) {
+    event.preventDefault();
+    alert("Right-click is disabled!");
+  });
+
+  // Disable Ctrl+U and F12 (DevTools)
+  document.addEventListener('keydown', function(event) {
+    if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
+      event.preventDefault();
+      alert("Viewing source is disabled!");
+    }
+    if (event.key === 'F12') {
+      event.preventDefault();
+      alert("DevTools are disabled!");
+    }
+  });
+</script>
+    
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function () {
