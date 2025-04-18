@@ -4,75 +4,92 @@
 <main>
     <!-- About Me Section -->
     <section id="about" class="section">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="profile-img-container">
-                    <img src="{{ url_for('static', filename='img/profile.svg') }}" alt="Vansh Ramani" class="profile-img">
-                </div>
-                <h2 class="name">Vansh Ramani</h2>
-                <div class="specialties">
-                    <p>Graph Deep Learning</p>
-                    <p>Data Distillation</p>
-                    <p>Spatial databases</p>
-                </div>
-                <div class="contact-info">
-                    <p>vanshramani27@gmail.com</p>
-                    <p>cs5230054@iitd.ac.in</p>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-4">
+                <div class="profile-header">
+                    <div class="profile-img-container">
+                        <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Praveen Shukla" class="profile-img">
+                    </div>
+                    <div class="profile-info">
+                        <h2 class="name">Praveen Shukla</h2>
+                        <div class="specialties">
+                            <p>Graph Deep Learning</p>
+                            <p>Data Distillation</p>
+                            <p>AI in Healthcare</p>
+                            <p>Spatial databases</p>
+                            
+                        </div>
+                        <div class="contact-info" style="margin-top: 10px;">
+                            <p>prashuiit@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-9">
+            <div class="col-lg-9 col-md-8">
                 <h2 class="section-title">About me</h2>
                 <div class="section-content">
-                    <p>I'm an undergraduate in Computer Science Engineering at IIT Delhi with a deep interest in Artificial Intelligence and its applications. My work spans graph deep learning, spatio-temporal data analytics, data distillation, and high-dimensional nearest neighbor search. Recently, I've been exploring LLMs and agentic frameworks.</p>
-                    <p>I love reading random facts, listening to jazz music, and right now, I'm just trying to work my way through quizzes and academics. :3</p>
+                    <p>I'm an undergraduate student in Data Science & Artificial Intelligence at IIT Madras with a strong passion for building intelligent systems that solve real-world problems. My current work lies at the intersection of graph deep learning, spatio-temporal analytics, data distillation, and efficient information retrieval. I’m also diving into the world of LLMs, prompt engineering, and agentic frameworks to explore the future of human-AI collaboration.</p>
+                    <p>Outside of research, I enjoy decoding ancient science, listening to instrumental music, and working on hands-on tech projects—from AI-powered bots to intelligent web apps. Right now, I’m balancing my academic life with a bit of curiosity, caffeine, and code. :3</p>
                 </div>
 
                 <h2 class="section-title">Affiliations</h2>
                 <div class="section-content">
                     <div class="affiliation">
-                        <h3>Carnegie Mellon University</h3>
-                        <p class="timeframe">Incoming May 2023 | Pittsburgh, PA, USA</p>
-                        <p class="position">Research Assistant (under Dr. <a href="#" class="researcher-link">Pradeep Ravikumar</a>)- Statistical & Symbolic Learning Group, MLD</p>
+                        <h3>Indian Institute of Technology Madras</h3>
+                        <p class="timeframe">Incoming May 2024 - Present | Chennai, TN, India</p>
+                        <p class="position">Research Intern (under Dr. <a href="https://rbcdsai.iitm.ac.in/people/krishnan-balasubramanian/" class="researcher-link">Krishnan Balasubramanian</a>)- Center for Non Destructive Evaluation Lab (<a href="https://www.cnde.in/" class="researcher-link">CNDE Lab</a>)</p>
+                    </div>
+                    <div class="affiliation">
+                        <h3>Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram</h3>
+                        <p class="timeframe">January 2025 - March 2025 | Kancheepuram, TN, INdia</p>
+                        <p class="position">Research Intern (under Dr. <a href="https://www.leaplab-iiitdm.co.in/team" class="researcher-link">Uttam Mrinal Pal</a>)- Light Engineering and Applied Photonics Lab (LEAP Lab)</p>
                     </div>
 
                     <div class="affiliation">
-                        <h3>University of Copenhagen</h3>
-                        <p class="timeframe">May 2024 - June 2024 | Copenhagen, Denmark</p>
-                        <p class="position">Research Intern (under Dr. <a href="#" class="researcher-link">Panagiotis Karras</a>)- Software, Data, People & Society, DIKU</p>
+                        <h3>Indian Institute of Remote Sensing - ISRO</h3>
+                        <p class="timeframe">August 2021 - Present | Mumbai, MH, India</p>
+                        <p class="position">Outreach Coordinator (under Zonal Org <a href="#" class="researcher-link">GLOBAL SCIENCE</a>) - Zonal Organization and External Engagements</p>
                     </div>
 
                     <div class="affiliation">
-                        <h3>Indian Institute of Technology Delhi</h3>
-                        <p class="timeframe">Feb 2024 - Present | Delhi, India</p>
-                        <p class="position">Research Assistant (under Dr. <a href="#" class="researcher-link">Sayan Ranu</a>)- Data Science and Information Retrieval Lab (DSIRE)</p>
+                        <h3>VIGYAN PRASAR, DST, Govt. of India</h3>
+                        <p class="timeframe">February 2020 - November 2023 | Mumbai, MH, India</p>
+                        <p class="position">Science Club Cooridnator (under <a href="https://www.indiascienceandtechnology.gov.in/listingpage/vigyan-prasar-completes-33-glorious-years-science-communication-popularisation-extension" class="researcher-link">VIPNET</a>)-  VIgyan Prasar NETwork (VIPNET) of Science Clubs in multiple science club.</p>
                     </div>
 
-                    <div class="affiliation">
+                    <!-- <div class="affiliation">
                         <p class="timeframe">Dec 2023 - Jan 2024 | Delhi, India</p>
                         <p class="position">Research Intern (under Dr. <a href="#" class="researcher-link">Tarak Karmakar</a>)- Computational Chemistry, Materials & Biology (CCMB)</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section">
+    <section id="education" class="section" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h2 class="section-title">Education</h2>
                 <div class="section-content">
-                    <div class="education">
-                        <h3>Indian Institute of Technology Delhi</h3>
-                        <p class="timeframe">2023 - 2028 | Delhi, India</p>
-                        <p class="degree">Bachelors + Masters in Computer Science Engineering</p>
-                    </div>
+                    <div class="row flex-column gap-4">
+                        <div class="education" data-aos="fade-up" data-aos-delay="50">
+                            <h3>Indian Institute of Technology Madras</h3>
+                            <p class="timeframe">2024 - 2028 | Chennai, TN India</p>
+                            <p class="degree">Bachelors in Artificial Intelligence & Data Science</p>
+                        </div>
 
-                    <div class="education">
-                        <h3>Swaraj India Public School</h3>
-                        <p class="timeframe">2013 - 2023 | Uttar Pradesh, India</p>
-                        <p class="degree">Higher Secondary Education (ICSE) | GPA: 9.65/10</p>
-                        <p class="degree">Secondary Education (ICSE) | GPA: 9.54/10</p>
+                        <div class="education" data-aos="fade-up" data-aos-delay="100">
+                            <h3>M H High School & Jr College</h3>
+                            <p class="timeframe">2021 - 2023 | Mumbai, MH India</p>
+                            <p class="degree">Higher Secondary Education (MH State Board) | GPA: 8/10</p>
+                        </div>
+
+                        <div class="education" data-aos="fade-up" data-aos-delay="150">
+                            <h3>SMT. Shushiladevi Deshmukh Vidyalaya & Jr College</h3>
+                            <p class="timeframe">2014 - 2021 | Mumbai, MH India</p>
+                            <p class="degree">Secondary Education (MH State Board) | GPA: 9.1/10</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,28 +99,88 @@
     <!-- Publications Section -->
     <section id="publications" class="section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h2 class="section-title">Publications</h2>
                 <div class="section-content">
-                    <div class="publication">
-                        <h3><a href="#" class="publication-link">Bonsai: Gradient-free Graph Distillation for Node Classification</a></h3>
-                        <p class="authors">Mritul Gupta, Samyak Jain, Vansh Ramani, Hariprasad Kodamana and Sayan Ranu</p>
-                        <p class="venue">The Thirteenth International Conference on Learning Representations, 2025</p>
+                    <div class="row g-4">
+                        <div class="publication">
+                            <h3><a href="#" class="publication-link">Bonsai: Gradient-free Graph Distillation for Node Classification</a></h3>
+                            <p class="authors">Mritul Gupta, Samyak Jain, Praveen Shukla , Hariprasad Kodamana and Sayan Ranu</p>
+                            <p class="venue">The Thirteenth International Conference on Learning Representations, 2025</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Experience Section (placeholder) -->
-    <section id="experience" class="section">
+    <!-- Scholastic Achievements Section -->
+    <section id="achievements" class="section" data-aos="fade-up" data-aos-delay="100">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
+                <h2 class="section-title">Scholastic Achievements</h2>
+                <div class="section-content">
+                    <ul class="achievement-list">
+                        <li>
+                            Pulse @ Techfest - IIT Bombay: Finalist in GenAI Buildathon
+                            <span class="timeframe"> - 2024</span>
+                        </li>
+                        <li>Co-discoverer of the Main Belt Asteroid 2020UJ37, named by the IAU’s Minor Planet Center <span class="timeframe">- 2020</span>          </li>
+                        <li>Among the top 20 in the AI Quiz on National Science Day (NSD-2022), conducted by Bhabha Atomic Research Center (BARC), Mumbai <span class="timeframe">- 2022</span></li>
+                        <li>State topper in Mathematics in the Matriculation examination conducted by MSBSHSE, Pune. <span class="timeframe">- 2021</span> </li>
+                        <li>Top performer in Weekly Quiz 2018–19 by MyGov, MeitY, Govt. of India <span class="timeframe">– 2018</span> </li>
+                        <li>Awarded 1<sup>st</sup> Position in Youth Invention with a cash prize of ₹5,000, a certificate, and a medal <span class="timeframe">– 2020</span></li>
+                        
+                        
+                        
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" data-aos="fade-up" data-aos-delay="100">
+        <div class="row">
+            <div class="col-12">
                 <h2 class="section-title">Experience</h2>
                 <div class="section-content">
-                    <!-- This section wasn't fully visible in the screenshots -->
-                    <div class="experience">
-                        <!-- Content will be based on the screenshots or additional information provided -->
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="experience">
+                            <!-- Content will be based on the screenshots or additional information provided -->
+                            <div class="experience" data-aos="fade-up" data-aos-delay="150">
+                                <h3>Indian Institute of Information Technology, Design and Manufacturing, Kancheepuram</h3>
+                                <p class="timeframe">Jan 2025 - Mar 2025 | Kancheepuram, TN India</p>
+                                <p class="role"><strong>Research Intern</strong></p>
+                                <p class="details">Developed deep learning models for early detection and classification of Oral Potentially Malignant Disorders (OPMDs) using clinical image data. Conducted literature review, dataset preparation, and domain-specific annotation of lesions. Implemented YOLO-based object detection and CNN classifiers in PyTorch to identify high-risk conditions like leukoplakia, erythroplakia, OLP, OSF, and PVL. Enhanced model performance through targeted augmentation and lesion-specific feature engineering. Collaborated with clinical researchers to ensure diagnostic accuracy and translational impact in oral cancer screening.</p>
+                            </div>
+                            <div class="experience" data-aos="fade-up" data-aos-delay="200">
+                                <h3>Lumio AI</h3>
+                                <p class="timeframe">Oct 2024 - Nov 2024 | Mumbai, MH India</p>
+                                <p class="role"><strong>AI Engineer Intern</strong></p>
+                                <p class="details">Developed and optimized end-to-end AI solutions for real-time client projects, applying advanced deep learning techniques and algorithm fine-tuning. Integrated Retrieval-Augmented Generation (RAG) with large language models (LLMs) to elevate context-aware responses in AI systems. Led model experimentation, feature engineering, and evaluation, ensuring high performance and reliability. Collaborated across engineering and product teams to deliver AI-driven features aligned with business goals. Demonstrated expertise in artificial intelligence, strategic communication, and problem-solving in fast-paced, innovation-driven environments.</p>
+                            </div>
+                            <div class="experience" data-aos="fade-up" data-aos-delay="250">
+                                <h3>GLOBAL SCIENCE</h3>
+                                <p class="timeframe">Feb 2020 - Present | Mumbai, MH India</p>
+                                <p class="role"><strong>Founder & Director</strong></p>
+                                <p class="details">
+                                    Started GLOBAL SCIENCE at the <span class="semi-bold">age of 12</span>, which later became affiliated with 
+                                    <span class="semi-bold">Vigyan Prasar (DST, GoI)</span> as a nationally recognized science communication initiative. 
+                                    Led NASA-funded asteroid discovery campaigns (19 finds), and organized India Techno Fest featuring experts from ISRO, IIT, and Meta. 
+                                    Initiated impactful programs such as <em>Inspiring Young</em> and <em>Science at Home</em> (including virtual CERN tours), reaching over 50,000 students across India.<br><br>
+                                    Built a network of 150+ district coordinators and 10 mentors from leading institutions. Spearheaded national science fairs, historical science series, and pandemic-era STEM outreach efforts to promote hands-on learning. 
+                                    Recognized with the <span class="semi-bold">Award of Excellence</span> by Vigyan Prasar for two consecutive years (2020–21 and 2021–22) for contributions to science communication.
+                                </p>
+                            </div>
+                            <div class="experience" data-aos="fade-up" data-aos-delay="250">
+                                <h3>International Astronomical Search Collaboration (IASC)</h3>
+                                <p class="timeframe">October 2020 - November 2021 | Mumbai, MH India</p>
+                                <p class="role"><strong>Citizen Scientist</strong></p>
+                                <p class="details">Spearheaded the Saptarishi VIPNET 03 campaign as Team Leader, mentoring government school teachers across three Indian states in the discovery of 10 preliminary Main Belt asteroids. Elevated to National Mentor, where I successfully led and trained multiple teams of students and educators, achieving 19 preliminary asteroid discoveries under my guidance. Played a pivotal role in capacity-building through technical training on Astrometrica and MPC reporting, empowering grassroots citizen scientists to contribute to global astronomical research.</p>
+                            </div>        
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,19 +190,24 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h2 class="section-title">Projects</h2>
                 <div class="section-content">
-                    <div class="project">
-                        <h3>MolMerger: Molecular Solubility Prediction</h3>
-                        <p>Molecule approach. Implemented attention mechanisms with GNNs on graphs, achieving an R² score of 0.94 for aqueous solubility prediction. Designed MolMerger to represent solute-solvent pairs with virtual bonds, modeling molecular interactions. Achieved an R² of 0.787 and MAE of 0.78 on the test set, with an average MAE of 0.79 across 65 solvents. Performed SHAP analysis for explainability, identifying atom type, formal charge, and aromatic rings as key factors.</p>
-                        <p><a href="https://github.com/VanshRamani/MolMerger-Solubility-Prediction" class="project-link">https://github.com/VanshRamani/MolMerger-Solubility-Prediction</a></p>
-                    </div>
-                    
-                    <div class="project">
-                        <h3>Comprehensive Deepfake Detection System with MTCNN and "Fact-Checking"</h3>
-                        <p>Developed a robust Deepfake detection model by optimizing two key components: an MTCNN-based frame-by-frame classifier with EfficientNet and a fact-checking approach that matches audio to visual features. Designed a streamlined pipeline combining both components using a weighted mean, achieving an award-winning 93% accuracy in Deepfake detection.</p>
-                        <p><a href="https://github.com/jdhruv1503/deepfake-detection" class="project-link">https://github.com/jdhruv1503/deepfake-detection</a></p>
+                    <div class="row row-cols-1 row-cols-lg-2 g-4">
+                        <div class="col">
+                            <div class="project">
+                                <h3>MolMerger: Molecular Solubility Prediction</h3>
+                                <p>Molecule approach. Implemented attention mechanisms with GNNs on graphs, achieving an R² score of 0.94 for aqueous solubility prediction. Designed MolMerger to represent solute-solvent pairs with virtual bonds, modeling molecular interactions. Achieved an R² of 0.787 and MAE of 0.78 on the test set, with an average MAE of 0.79 across 65 solvents. Performed SHAP analysis for explainability, identifying atom type, formal charge, and aromatic rings as key factors.</p>
+                                <p><a href="https://github.com/VanshRamani/MolMerger-Solubility-Prediction" class="project-link">https://github.com/VanshRamani/MolMerger-Solubility-Prediction</a></p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="project">
+                                <h3>Comprehensive Deepfake Detection System</h3>
+                                <p>Developed a robust Deepfake detection model by optimizing two key components: an MTCNN-based frame-by-frame classifier with EfficientNet and a fact-checking approach that matches audio to visual features. Designed a streamlined pipeline combining both components using a weighted mean, achieving an award-winning 93% accuracy in Deepfake detection.</p>
+                                <p><a href="https://github.com/jdhruv1503/deepfake-detection" class="project-link">https://github.com/jdhruv1503/deepfake-detection</a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -135,11 +217,13 @@
     <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-12">
                 <h2 class="section-title">Contact</h2>
                 <div class="section-content">
-                    <p><a href="https://www.linkedin.com/in/vanshramani/" class="contact-link">LinkedIn</a></p>
-                    <p><a href="mailto:vanshramani27@gmail.com" class="contact-link">Email</a></p>
+                    <div class="d-flex gap-3">
+                        <p><a href="https://www.linkedin.com/in/praveen-ashukla/" class="contact-link">LinkedIn</a></p>
+                        <p><a href="mailto:prashuiit@gmail.com" class="contact-link">Email</a></p>
+                    </div>
                 </div>
             </div>
         </div>

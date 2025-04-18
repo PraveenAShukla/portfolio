@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vansh Ramani - Portfolio</title>
-    
+    <title>Praveen Shukla - Portfolio</title>
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -14,23 +16,36 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init();
+  });
+</script>
+
+
 <body>
     <header class="fixed-header">
         <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center logo-container">
-                    <a href="#" class="logo">
-                        <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="Logo">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid px-0">
+                    <!-- Updated AI/DS themed logo -->
+                    <a class="navbar-brand logo-container" href="#">
+                        <div class="logo-icon">
+                            <i class="fas fa-robot"></i>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="name">Praveen Shukla</span>
+                        </div>
                     </a>
-                </div>
-            </div>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid justify-content-center">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                        <ul class="navbar-nav">
+                    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
                                 <a class="nav-link" href="#about">About Me</a>
                             </li>
@@ -65,5 +80,89 @@
     
     <!-- Custom JS -->
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <!-- Wave Divider -->
+<div style="height: 30px; overflow: hidden;">
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.00,150.00 349.00,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: #1f2e3c;"></path>
+    </svg>
+</div>
+
+<!-- Footer Section -->
+<footer style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);" class="text-white pt-4 pb-3">
+    <div class="container text-center text-md-start">
+        <div class="row">
+            <!-- Left Section -->
+            <div class="col-md-6 mb-3 mb-md-0">
+                <h5 class="fw-bold">Praveen Shukla</h5>
+                <p class="text-white-50 small">AI & Data Science Enthusiast | Portfolio 2025</p>
+                <div class="mt-3 d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                    <i class="fab fa-python fa-lg text-white-50"></i>
+                    <i class="fas fa-brain fa-lg text-white-50"></i>
+                    <i class="fas fa-chart-line fa-lg text-white-50"></i>
+                    <i class="fab fa-github fa-lg text-white-50"></i>
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center gap-3">
+                <a href="mailto:prashuiit@gmail.com" class="text-white text-decoration-none footer-link">
+                    <i class="fas fa-envelope me-1"></i> Email
+                </a>
+                <a href="http://github.com/PraveenAShukla/" class="text-white footer-link" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/praveen-ashukla/" class="text-white footer-link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+
+        <hr class="border-light my-3">
+
+        <div class="text-center small text-white-50">
+            © 2025 Praveen Shukla. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- Back to Top Button -->
+<a href="#about" class="btn btn-outline-info btn-sm rounded-circle position-fixed bottom-0 end-0 m-3" title="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+</a>
+
+    
+    
+    <script>
+        // Smooth scroll and close menu on click (for mobile)
+        document.querySelectorAll('a.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+    
+                // Collapse the navbar if it's open (on mobile)
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarToggler && navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click(); // this simulates a click to close it
+                }
+            });
+        });
+    </script>
+    <script>
+        const btn = document.querySelector('.btn.btn-outline-info');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                btn.style.display = 'block';
+            } else {
+                btn.style.display = 'none';
+            }
+        });
+    </script>
+    
+           
 </body>
 </html>
