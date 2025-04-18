@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praveen Shukla - Portfolio</title>
@@ -22,10 +21,7 @@
     
 <script>
     
-    if (window.location.protocol === "view-source:") {
-  window.location.href = "https://praveen-shukla-port.onrender.com";
-}
-
+  
     document.addEventListener('keydown', function(event) {
   if (event.key === 'F12' || (event.ctrlKey && event.shiftKey && event.key === 'I')) {
     alert('DevTools is disabled!');
